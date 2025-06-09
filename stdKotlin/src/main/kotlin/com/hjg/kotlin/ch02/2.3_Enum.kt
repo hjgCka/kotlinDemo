@@ -10,8 +10,9 @@ enum class Color(val r: Int, val g: Int, val b: Int) {
     INDIGO(75, 0, 130), BLUE(0, 0, 255),
     VIOLET(238, 130, 238);
 
-    //省略了 : Int
-    fun rgb() = (r * 256 + g) * 256 + b
+    val rgb = (r * 256 + g) * 256 + b
+    //enum 重写了toString()
+    fun printColor() = println("$this is $rgb")
 }
 
 fun getMnemonic(color: Color) =
@@ -53,10 +54,11 @@ fun mixOptimized(c1: Color, c2: Color) =
     }
 
 fun main(args: Array<String>) {
-    println(Color.RED.rgb())
+    println("r = ${Color.RED.r}, rgb = ${Color.RED.rgb}")
+    Color.RED.printColor()
 
     println(getMnemonic(Color.RED))
     println(getWarmth(Color.BLUE))
 
-    println(mix(Color.YELLOW, Color.VIOLET))
+    println(mix(Color.RED, Color.YELLOW))
 }

@@ -21,6 +21,7 @@ fun iteratorMap() {
     var binaryReps = TreeMap<Char, String>()
 
     for (c in 'A'..'F') {
+        //这里没有用put方法
         binaryReps[c] = Integer.toBinaryString(c.code)
     }
 
@@ -32,4 +33,6 @@ fun iteratorMap() {
 fun main(args: Array<String>) {
     iteratorList()
     iteratorMap()
+
+    println("kotlin" in "java".."scala")
 }

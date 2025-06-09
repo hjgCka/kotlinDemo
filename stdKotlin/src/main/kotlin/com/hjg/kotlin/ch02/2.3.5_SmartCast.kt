@@ -1,7 +1,9 @@
 package com.hjg.kotlin.ch02
 
 interface Expr
+//Num类实现了 Expr接口
 class Num(val value: Int) : Expr
+//Sum类实现了 Expr接口
 class Sum(val left: Expr, val right: Expr) : Expr
 
 fun eval(e: Expr) : Int {
