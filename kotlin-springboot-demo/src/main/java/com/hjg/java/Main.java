@@ -1,4 +1,6 @@
-package com.hjg;
+package com.hjg.java;
+
+import com.hjg.java.entity.Bike;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -13,5 +15,7 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+
+        System.out.println(new Bike("Jet", "yellow"));
     }
 }
