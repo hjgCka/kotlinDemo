@@ -19,7 +19,7 @@
 //}
 
 plugins {
-    id("my-shared-kotlin")
+    id("shared-std-kotlin")
 
     /**
      * kotlin官方维护的插件，如果不加上它，总是会提醒@SpringBootApplication注解的类

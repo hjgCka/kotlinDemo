@@ -45,5 +45,5 @@
 //}
 
 plugins {
-    id("my-shared-kotlin")
+    id("shared-std-kotlin")
 }
