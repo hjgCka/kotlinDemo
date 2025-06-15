@@ -1,4 +1,4 @@
-package com.hjg.java.entity;
+package com.hjg.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

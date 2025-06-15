@@ -1,6 +1,6 @@
-package com.hjg.java;
+package com.hjg;
 
-import com.hjg.java.entity.Bike;
+import com.hjg.entity.Bike;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
