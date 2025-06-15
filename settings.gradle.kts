@@ -17,3 +17,5 @@ plugins {
 rootProject.name = "kotlinDemo"
 
 include("stdKotlin")
+
+include("kotlin-springboot-demo")
