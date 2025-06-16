@@ -26,6 +26,7 @@ plugins {
      * 需要被设为open。
      * 它与@Configuration的proxyBeanMethods属性有关系。
      */
+    //kotlin("plugin.spring")
     id("org.jetbrains.kotlin.plugin.spring") version "2.1.20"
 
     id("org.springframework.boot") version "3.4.6"
