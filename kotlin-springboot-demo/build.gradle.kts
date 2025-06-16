@@ -40,3 +40,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
+
+/**
+ * 需被 Spring 容器管理的组件（如 @Service、@Controller、@Repository）必须定义在类中。
+ * 数据实体类、DTO 等需定义为类，可配合 data class 简化开发。
+ * 需要继承父类或实现接口的类型必须定义为类。
+ */

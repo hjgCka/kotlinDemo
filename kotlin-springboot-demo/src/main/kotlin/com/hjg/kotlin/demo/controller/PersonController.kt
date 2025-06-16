@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/users")
-class MyRestController() {
+class PersonController {
 
     @GetMapping("/{userId}")
     fun getUser(@PathVariable userId: Long): Person {
@@ -18,5 +18,4 @@ class MyRestController() {
         person.name = "Jack"
         return person
     }
-
 }
