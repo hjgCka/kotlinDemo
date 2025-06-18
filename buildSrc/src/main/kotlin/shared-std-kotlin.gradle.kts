@@ -8,6 +8,9 @@ plugins {
     id("org.jetbrains.kotlin.jvm")
 }
 
+group = "com.hjg"
+version = "1.0-SNAPSHOT"
+
 repositories {
     mavenCentral()
 }

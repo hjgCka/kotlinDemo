@@ -19,3 +19,5 @@ rootProject.name = "kotlinDemo"
 include("stdKotlin")
 
 include("kotlin-springboot-demo")
+
+include("util")
