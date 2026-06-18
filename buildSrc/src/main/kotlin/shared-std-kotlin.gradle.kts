@@ -3,7 +3,12 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinVersion
 
 plugins {
     id("java")
-    //这里无需指定版本，因为build.gradle.kts中依赖的插件，已经指定了版本
+
+    //这里无需指定版本，因为build.gradle.kts中依赖org.jetbrains.kotlin:kotlin-gradle-plugin，已经指定了版本且放入了classpath。
+    //已经在当前构建 classpath 中存在的插件，使用 id(...) 应用时禁止携带 version()，带版本会直接报错。
+
+    //这2种写法等价，前者是JetBrains 官方封装的类型安全简写语法（仅 .gradle.kts 可用），后者是Gradle 标准原生通用写法。
+    //kotlin("jvm") 只是对长插件 ID 的语法糖封装，底层等价于 id("org.jetbrains.kotlin.jvm")。
     //kotlin("jvm")
     id("org.jetbrains.kotlin.jvm")
 }
